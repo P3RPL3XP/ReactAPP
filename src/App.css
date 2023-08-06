@@ -1,0 +1,42 @@
+
+#container{
+  background-color: black;
+  min-height: 300px;
+}
+#div:hover{
+  background-color: aqua;
+  color: antiquewhite;
+}
+body{
+  background-color:blueviolet;
+
+}
+.heart{
+  background-color: red;
+  width: 100px;
+  height: 100px;
+  margin-top: 10%;
+  margin-left: 10%;
+  position: relative;
+  transform: rotate(45deg)
+}
+.heart::before
+{
+  content: '';
+  margin-top: -50%;
+  position: absolute;
+  background-color:red;
+  width: 100px;
+  height: 100px;
+  border-radius: 50% 50% 0 50%;
+}
+.heart::after
+{
+  content: '';
+  margin-left: -50%;
+  position: absolute;
+  background-color:red;
+  width: 100px;
+  height: 100px;
+  border-radius: 50% 50% 0 50% ;
+}
